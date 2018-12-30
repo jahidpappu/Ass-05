@@ -264,12 +264,12 @@ $c = explode (", ", $a);
 
 $size = sizeof($c);
 
-for($i=0; $i < sizeof($c); $i++){
+for($i = 0; $i < sizeof($c); $i++){
 
   $avg = $avg  + $c[$i];
 
+}
 
-
-
+echo "The average is: ".round($avg/size,2);
 
 
