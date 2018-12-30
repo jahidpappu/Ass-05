@@ -248,7 +248,7 @@ echo "<br/>";
  $stack->pop();
  $stack->pop();
 
-*/
+
 
 //.........................................
  
@@ -272,4 +272,29 @@ for($i = 0; $i < sizeof($c); $i++){
 
 echo "The average is: ".round($avg/$size,2);
 
+*/
+$limit = 17;
+echo "For upto $limit the prime numbers are : ";
 
+for( $i=1; $i<=$limit; $i++){
+
+  $count = 0;
+  $n = $i;
+
+  //Less than N as we dont want it to be divided by N;
+  for ($j =1; $j<$n; $j++){
+
+     if( $n%$j == 0 && $j !=1 ){
+
+        $count++;
+
+      }
+  }
+  if( $count == 0){
+    if($i !=1 ){
+      echo ", ";
+    }
+    echo "$n";
+  }
+
+}

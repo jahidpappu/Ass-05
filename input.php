@@ -36,3 +36,23 @@ for ($i = 0; $i < $n; $i++){
     }
     echo "<br>";
 }
+
+$a = "23, 44, 70, 25, 90, 17";
+$c = array();
+$avg = 0;
+
+echo "For the input : $a";
+echo "<br/>";
+
+$c = explode (", ", $a);
+
+$size = sizeof($c);
+
+for($i = 0; $i < sizeof($c); $i++){
+
+  $avg = $avg  + $c[$i];
+
+}
+
+echo "The average is: ".round($avg/$size,2);
+
