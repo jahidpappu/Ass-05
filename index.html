@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sdfasdasdasd</title>
+</head>
+<body>
+
+
+  <?php 
+  
+  $n = 1;
+
+  while( $n <= 100){
+  
+     if( $n % 2 == 0 ){
+      echo "Print $n <br/>";
+     }
+    
+    $n = $n + 1 ;    
+    
+  }
+  
+class geometry()
+{
+  public $PI = 3.14 ;
+}
+
+class rectangle extends geometry()
+{
+
+  public $width;
+  public $height;
+
+  public function getWidth()
+  {
+    return $this->width;
+  }
+
+  public function getHeight()
+  {
+    return $this->height;
+  }
+
+  public function getArea()
+  {
+    return $this->width * $this->height;
+  }
+
+  public function draw()
+    {
+
+    }
+}
+ 
+class circle extends geometry()
+{
+  public $radius;
+
+  public function getArea()
+  {
+    return $this->PI * $this->radius * $this->radius;
+
+    public function draw()
+    {
+
+    }
+  }
+}
+
+$shape = new rectangle();
+$shape2 = new circle();
+
+
+abstract class geometry()
+{
+  public $PI = 3.14 ;
+
+  abstract function drew();
+
+  public function area()
+  {
+    $x = 5;
+  }
+}
+
+class rectangle extends geometry
+{
+  public function draw()
+  {
+    echo "drawing";
+  }
+}
+
+$x = new rectangle();
+$x->draw();
+
+echo ".......................";
+
+abstract class vehicle
+{
+
+  private $speed;
+  public function getCurrentSpeed()
+  {
+    return $his->speed();
+  }
+
+  public abstract function start();
+
+  public abstract function stop();
+}
+
+class cycle extends vehicle
+{
+  public function start()
+  {
+    echo "Starting cycle";
+  }
+
+  public function stop()
+  {
+    echo "Stop cycle";  
+  }
+}
+
+class airplane extends vehicle
+{
+  public function start()
+  {
+    echo "Starting airplane";
+  }
+
+  public function stop()
+  {
+    echo "stop airplane";
+  }
+}
+
+$cycle = new cycle();
+$cycle->start();
+$cycle->stop();
+
+$airplane = new airplane();
+$airplane->start();
+$airplane->stop();
+
+
+echo ".......................";
+
+$str = ""
+  
+</body>
+</html>
