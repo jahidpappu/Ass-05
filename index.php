@@ -270,6 +270,6 @@ for($i = 0; $i < sizeof($c); $i++){
 
 }
 
-echo "The average is: ".round($avg/size,2);
+echo "The average is: ".round($avg/$size,2);
 
 
