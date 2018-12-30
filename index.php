@@ -260,9 +260,13 @@ $avg = 0;
 echo "For the input : $a";
 echo "<br/>";
 
+$c = explode (", ", $a);
 
+$size = sizeof($c);
 
+for($i=0; $i < sizeof($c); $i++){
 
+  $avg = $avg  + $c[$i];
 
 
 
