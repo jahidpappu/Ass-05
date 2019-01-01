@@ -272,8 +272,8 @@ for($i = 0; $i < sizeof($c); $i++){
 
 echo "The average is: ".round($avg/$size,2);
 
-*/
-$limit = 17;
+
+$limit = 1000;
 echo "For upto $limit the prime numbers are : ";
 
 for( $i=1; $i<=$limit; $i++){
@@ -298,3 +298,16 @@ for( $i=1; $i<=$limit; $i++){
   }
 
 }
+
+*/
+$a = "I love Bangladesh, I love tiger";
+$b = str_replace(",","",$a);
+$c = str_replace(".","",$b);
+$d = array();
+
+$d = explode(" ", $c);
+echo "Using the funciton";
+echo "<br />";
+print_r(array_count_value($d));
+
+echo "<br />";
