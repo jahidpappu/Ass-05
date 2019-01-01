@@ -308,6 +308,17 @@ $d = array();
 $d = explode(" ", $c);
 echo "Using the funciton";
 echo "<br />";
-print_r(array_count_value($d));
+print_r(array_count_values($d));
 
 echo "<br />";
+
+for( $i = 0; $i < sizeof($d);  $i++){
+  $count = 0;
+  for ($j=0; $j<sizeof($d); $j++){
+      if($d[$i] == $d[$j]){
+        $count++;
+      }
+  }
+  echo "$d[$i] = $count";
+  echo "<br/>";
+}
