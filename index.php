@@ -325,4 +325,6 @@ for( $i = 0; $i < sizeof($d);  $i++){
 */
 
 
- echo "Today is: ". date("Y/m/d");
+ echo "Today is: ". date("Y/m/d")."\n";
+ echo "Today is: ". date("l")."\n";
+ echo "Today is: ". date("h:i:aa")."\n";
