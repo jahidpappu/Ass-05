@@ -351,7 +351,7 @@ $one = "jahid is my name";
 fwrite($createfile, $one);
 
 fclose($$createfile);
-*/
+
 if(isset($_FILES['image'])){
     $filename = $_FILES['image']['name'];
     $filetemp = $_FILES['image']['tmp_name'];
@@ -365,6 +365,25 @@ if(isset($_FILES['image'])){
 <input type="submit" value="Submit">
 
 </form>
+
+*/
+session_start();
+
+$_SESSION['user'] = "delowar";
+$_SESSION['password'] ="hoaain";
+
+echo "User Name " .$_SESSION['user']. "\n";
+echo "Password is" .$_SESSION[''];
+
+session_destroy();
+
+
+setcookie(name, value, expire, path, domain, secure, httponly);
+
+
+
+
+
 
 
 
