@@ -299,7 +299,6 @@ for( $i=1; $i<=$limit; $i++){
 
 }
 
-*/
 $a = "I love Bangladesh, I love tiger";
 $b = str_replace(",","",$a);
 $c = str_replace(".","",$b);
@@ -322,3 +321,8 @@ for( $i = 0; $i < sizeof($d);  $i++){
   echo "$d[$i] = $count";
   echo "<br/>";
 }
+
+*/
+
+
+ echo "Today is: ". date("Y/m/d");
