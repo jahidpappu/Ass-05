@@ -355,7 +355,8 @@ fclose($$createfile);
 if(isset($_FILES['image'])){
     $filename = $_FILES['image']['name'];
     $filetemp = $_FILES['image']['tmp_name'];
-    move_uploaded_file($filetemp, images);
+    move_uploaded_file($filetemp, "images/".$filename);
+    echo "Image uplaoded successfulle";
 }
 ?>
 <form action ="" method="POST" enctype="multipart/form-data" >
