@@ -322,7 +322,7 @@ for( $i = 0; $i < sizeof($d);  $i++){
   echo "<br/>";
 }
 
-*/
+
 
 
  echo "Today is: ". date("Y/m/d")."\n";
@@ -345,5 +345,19 @@ while(!feof($ourfile)){
   echo fgets($ourfile);
 }
 fclose($ourfile);
+
+$createfile = fopen("text.txt", "w") or die ("file not found");
+$one = "jahid is my name";
+fwrite($createfile, $one);
+
+fclose($$createfile);
+*/
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+  <input type="file" name ="image">
+  <input type="submit" value="Submit">
+
+</form>
 
 
