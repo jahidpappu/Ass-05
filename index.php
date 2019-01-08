@@ -366,7 +366,6 @@ if(isset($_FILES['image'])){
 
 </form>
 
-*/
 session_start();
 
 $_SESSION['user'] = "delowar";
@@ -376,9 +375,17 @@ echo "User Name " .$_SESSION['user']. "\n";
 echo "Password is" .$_SESSION[''];
 
 session_destroy();
+*/
+
+if(!isset($_COOKIE['visited'])){
+  setcookie("visited","1", time()+86400,"/") or die("could not set cookie!");  
+  echo "This is your sucess";
+}else{
+  echo "you are old viistor";
+}
 
 
-setcookie(name, value, expire, path, domain, secure, httponly);
+
 
 
 
