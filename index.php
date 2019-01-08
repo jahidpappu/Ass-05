@@ -352,12 +352,18 @@ fwrite($createfile, $one);
 
 fclose($$createfile);
 */
+if(isset($_FILES['image'])){
+    $filename = $_FILES['image']['name'];
+    $filetemp = $_FILES['image']['tmp_name'];
+    move_uploaded_file($filetemp, images);
+}
+?>
+<form action ="" method="POST" enctype="multipart/form-data" >
 
-<form action="" method="POST" enctype="multipart/form-data">
-
-  <input type="file" name ="image">
-  <input type="submit" value="Submit">
+<input type="file" name ="image">
+<input type="submit" value="Submit">
 
 </form>
+
 
 
