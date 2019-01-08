@@ -337,6 +337,13 @@ for( $i = 0; $i < sizeof($d);  $i++){
 //file handling
 
 $ourfile = fopen ("text.txt", "r") or die ("file not found");;
-fread($ourfile, filesize("text.txt"));
+echo fgetc($ourfile, filesize("text.txt"));
 fclose($ourfile);
+
+$ourfile = fopen ("text.txt", "r") or die ("file not found");;
+while(!feof($ourfile)){
+  echo fgets($ourfile);
+}
+fclose($ourfile);
+
 
