@@ -328,3 +328,15 @@ for( $i = 0; $i < sizeof($d);  $i++){
  echo "Today is: ". date("Y/m/d")."\n";
  echo "Today is: ". date("l")."\n";
  echo "Today is: ". date("h:i:aa")."\n";
+
+ //include;
+
+
+//include ('header.php');
+
+//file handling
+
+$ourfile = fopen ("text.txt", "r") or die ("file not found");;
+fread($ourfile, filesize("text.txt"));
+fclose($ourfile);
+
