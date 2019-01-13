@@ -412,7 +412,25 @@ if(filter_var($int, FILTER_VALIDATE_INT)){
 }else{
   echo "It is not interger Value";
 }
+echo "<br/>";
+$ip = "172.0.0.15";
+if(filter_var($ip, FILTER_VALIDATE_IP)){
+  echo "This is valide ip address";
+}else{
+  echo "It is not valide ip address";
+}
 
+
+$intnum = 300;
+$min = 1;
+$max = 200;
+
+if(filter_var($intum, FILTER_VALIDATE_INT, array("option" => array("Main_Range" =>$min,
+"max_range"=>$max))) === false){
+  echo "It is not valid";
+}else{
+  echo "this is valied";
+}
 
 
 
