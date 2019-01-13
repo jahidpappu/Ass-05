@@ -420,12 +420,14 @@ if(filter_var($ip, FILTER_VALIDATE_IP)){
   echo "It is not valide ip address";
 }
 
+echo "<br/>";
 
-$intnum = 300;
+$intum = 300;
 $min = 1;
 $max = 200;
 
-if(filter_var($intum, FILTER_VALIDATE_INT, array("option" => array("Main_Range" =>$min,
+if(filter_var($intum, FILTER_VALIDATE_INT, 
+array("option" => array("Main_Range" =>$min,
 "max_range"=>$max))) === false){
   echo "It is not valid";
 }else{
@@ -433,9 +435,15 @@ if(filter_var($intum, FILTER_VALIDATE_INT, array("option" => array("Main_Range" 
 }
 
 
+echo "<br/>";
 
-
-
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+$price = 45;
+if($price == 45){
+  print "this is $price";
+}else{
+  print "priice in no 45";
+}
 
 
 
