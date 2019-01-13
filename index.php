@@ -1,7 +1,7 @@
 <?php
 
-session_start();
-include '';
+
+
 
 /*
 
@@ -378,13 +378,25 @@ echo "User Name " .$_SESSION['user']. "\n";
 echo "Password is" .$_SESSION[''];
 
 session_destroy();
-*/
 
 if(!isset($_COOKIE['visited'])){
   setcookie("visited","1", time()+86400,"/") or die("could not set cookie!");  
   echo "This is your sucess";
 }else{
   echo "you are old viistor";
+}
+foreach ($filter as $id => $filer) {
+  echo '<tr><td>' . $filter .'<td></td>'. filter_id() . '</td> <tr>;';
+}
+
+*/
+
+$ip = "192.168.20.15";
+
+if(filter_var($ip, FILTER_VALIDATE_IP)){
+  echo "$ip is valid email address";
+}else{
+  echo "$ip is not valid email address";
 }
 
 
