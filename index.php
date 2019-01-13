@@ -389,7 +389,7 @@ foreach ($filter as $id => $filer) {
   echo '<tr><td>' . $filter .'<td></td>'. filter_id() . '</td> <tr>;';
 }
 
-*/
+
 
 $ip = "192.168.20.15";
 
@@ -398,6 +398,21 @@ if(filter_var($ip, FILTER_VALIDATE_IP)){
 }else{
   echo "$ip is not valid email address";
 }
+*/
+
+$str = "<h1> i am learning php</h1>";
+$newstr = filter_var($str, FILTER_SANITIZE_STRING);
+echo $newstr;
+
+echo "<br/>";
+
+$int = 50;
+if(filter_var($int, FILTER_VALIDATE_INT)){
+  echo "This is interger value";
+}else{
+  echo "It is not interger Value";
+}
+
 
 
 
