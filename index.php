@@ -398,7 +398,7 @@ if(filter_var($ip, FILTER_VALIDATE_IP)){
 }else{
   echo "$ip is not valid email address";
 }
-*/
+
 
 $str = "<h1> i am learning php</h1>";
 $newstr = filter_var($str, FILTER_SANITIZE_STRING);
@@ -445,8 +445,33 @@ if($price == 45){
   print "priice in no 45";
 }
 
+echo "<br/>";
+
+function numCheck($num){
+  if($num > 1){
+    throw new exception("Value mus be 1 or below");
+  }
+  return true;
+}
+try{
+  numCheck(0);
+  echo "if you see this, the number is 1 or below";
+}
+catch(Excaption $e){
+  echo "Message: ".$e->getMessage();
+}
+
+echo "<br/>";
 
 
+$Mystr = "we are learing php";
+$str = explode(" ", $Mystr);
+echo $str[1];
+*/
+$Mystr = array("we", "are", "learing", "php");
+echo print_r(implode(" ", $Mystr ));
 
+echo "PHP Fundamentals Bangla Tutorial Part-44 (Case Change)
+";
 
 
