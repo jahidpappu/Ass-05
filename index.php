@@ -1,10 +1,3 @@
-<?php
-
-
-
-
-/*
-
 
 echo "<br/>";
 echo "<br/>";
@@ -467,11 +460,36 @@ echo "<br/>";
 $Mystr = "we are learing php";
 $str = explode(" ", $Mystr);
 echo $str[1];
-*/
+
 $Mystr = array("we", "are", "learing", "php");
 echo print_r(implode(" ", $Mystr ));
 
 echo "PHP Fundamentals Bangla Tutorial Part-44 (Case Change)
 ";
 
+//Tutorial Part-44 (Case Change)
+<form action="index.php" method="post">
+  <input type="text" name="text">
+  <input type="submit" value="Submit">
+</form>
+*/
+<?php
 
+if(isset($_POST['text']){
+    $txt = $_POST['text'];
+    echo strtoupper($txt);
+  }
+
+
+
+$age = array(
+  "Jahid" => "35";
+  "Mamun" => "32";
+  "Jamal" => "35";
+  "Rahim" => "35";
+);
+
+foreach( $age as $key=>$value){
+  echo "Name = " .$key." Age = ".$value;
+  echo "<br/>";
+}
